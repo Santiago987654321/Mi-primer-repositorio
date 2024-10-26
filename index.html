@@ -1,96 +1,85 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css/index.css">
-    <link rel="stylesheet" href="styles.css"> 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <title>Mercado Libre</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM5vErm4V1b+U5C+Uj2VZ62ksWzT4DbP4/I5J6" crossorigin="anonymous">
-
 </head>
 <body>
     <!--header-->
     <header>
-        
         <div class="logo">
-            <img src="./img/logo-mercado-liebre.svg" alt="logo-mercado-liebre">
+            <img src="./img/logo-mercado-liebre.svg" alt="Logo de Mercado Libre">
         </div>
         <div class="search-img">
-            <input type="text" placeholder="buscar productos...">
-            <img src="./img/magnifying-glass-solid.svg" alt="buscar" class="search.img">
+            <input type="text" placeholder="Buscar productos...">
+            <img src="./img/magnifying-glass-solid.svg" alt="Buscar" class="search-img">
         </div>
         <div class="credit-info img">
-            <img src="./img/hand-holding-dollar-solid.svg" alt="pago en efectivo"
+            <img src="./img/hand-holding-dollar-solid.svg" alt="Pago en efectivo">
         </div>
+        <p>Comprá en cuotas y sin tarjeta de crédito</p>
         
-
-        <p>comprá en cuotas y sin tarjeta de crédito</p>
-        
-        <nav>
-            <ul>
-                <li><a href="#">Ofertas</a></li>
-                <li><a href="#">Tiendas Oficiales</a></li>
-                <li><a href="#">Vender</a></li>
-                <li><a href="#">Ayuda</a></li>
-                <li><a href="#">Creá tu cuenta</a> <img src="./img/id-card-regular.svg" alt="crea tu cuenta"></li>
-                <li><a href="#">Ingresá</a> <img src="./img/right-to-bracket-solid.svg" alt="ingresa"></li>
-                <li><a href="#">Mis compras</a><img src="./img/basket-shopping-solid.svg" alt="mis compras"></li>
-            </ul>
-        </nav>
-        <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
-            <div class=" p-4">
-              <h5 class="text-body-emphasis h4">Collapsed content</h5>
-              <span class="text-body-secondary">Toggleable via the navbar brand.</span>
-            </div>
-          </div>
-          <nav class="navbar navbar-dark ">
-            <div class="container-fluid">
-              <button class="navbar-toggler bg-dark type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-              </button>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#">Ofertas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Tiendas Oficiales</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Vender</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Ayuda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Creá tu cuenta</a><img src="./img/id-card-regular.svg" alt="Crear cuenta"></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Ingresá</a><img src="./img/right-to-bracket-solid.svg" alt="Ingresar"></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Mis compras</a><img src="./img/basket-shopping-solid.svg" alt="Mis compras"></li>
+                </ul>
             </div>
-          </nav>
-          
+        </nav>
     </header>
 
     <!--main-->
     <main>  
+        <!-- Banner -->
+<section class="banner">
+    <img src="./img/img-home-banner.jpg" alt="Banner Promocional">
+</section>
+
         <!-- sección: basado en tu ultima vista -->
         <section>
             <h2>Basado en tu última visita</h2>
             <div class="producto"> 
-                <img src="./img/img-cafetera-moulinex.jpg" alt="cafetera moulinex">
-                <img src="./img/truck-solid.svg" alt="camion" class="icon">
+                <img src="./img/img-cafetera-moulinex.jpg" alt="Cafetera Moulinex">
+                <img src="./img/truck-solid.svg" alt="Camión" class="icon">
                 <p class="price">$6.770</p>
                 <p class="discount">40% OFF</p>
                 <p class="product-name">Cafetera Moulinex</p>
             </div>
             <div class="producto"> 
-                <img src="./img/img-macbook-pro-2019.jpg" alt="macbook pro 2019">
-                <img src="./img/truck-solid.svg" alt="camion" class="icon">
-                <p class="price">$6.770</p>
-                <p class="discount">40% OFF</p>
-                <p class="product-name">Cafetera Moulinex</p>
-                
+                <img src="./img/img-macbook-pro-2019.jpg" alt="MacBook Pro 2019">
+                <img src="./img/truck-solid.svg" alt="Camión" class="icon">
+                <p class="price">$230.000</p>
+                <p class="discount">20% OFF</p>
+                <p class="product-name">MacBook Pro 2019</p>
             </div>
             <div class="producto"> 
-                <img src="./img/img-samsung-galaxy-s10.jpg" alt="samsung galaxy s10">
-                <img src="./img/truck-solid.svg" alt="camion" class="icon">
-                <p class="price">$6.770</p>
-                <p class="discount">40% OFF</p>
-                <p class="product-name">Cafetera Moulinex</p>
-                
+                <img src="./img/img-samsung-galaxy-s10.jpg" alt="Samsung Galaxy S10">
+                <img src="./img/truck-solid.svg" alt="Camión" class="icon">
+                <p class="price">$70.500</p>
+                <p class="discount">10% OFF</p>
+                <p class="product-name">Samsung Galaxy S10</p>
             </div>
             <div class="producto"> 
-                <img src="./img/img-tv-samsung-smart.jpg" alt="smart tv samsung">
-                <img src="./img/truck-solid.svg" alt="camion" class="icon">
-                <p class="price">$6.770</p>
-                <p class="discount">40% OFF</p>
-                <p class="product-name">Cafetera Moulinex</p>
-                
+                <img src="./img/img-tv-samsung-smart.jpg" alt="Smart TV Samsung">
+                <img src="./img/truck-solid.svg" alt="Camión" class="icon">
+                <p class="price">$23.200</p>
+                <p class="discount">5% OFF</p>
+                <p class="product-name">Smart TV Samsung</p>
             </div>
         </section>
 
@@ -98,60 +87,43 @@
         <section>
             <h2>Ofertas</h2>
             <div class="producto">
-                <img src="./img/img-cafetera-moulinex.jpg" alt="cafetera moulinex">
-                <img src="./img/truck-solid.svg" alt="camion" class="icon">
-                <p class="price">$6.770</p>
-                <p class="discount">40% OFF</p>
-                <p class="product-name">Cafetera Moulinex</p>
-                
+                <img src="./img/img-cafetera-moulinex.jpg" alt="Cafetera Moulinex">
+                <p>$6.770 40% OFF</p>
+                <p>Cafetera Moulinex</p>
             </div>
             <div class="producto">
-                <img src="./img/img-macbook-pro-2019.jpg" alt="macbook pro 2019">
-                <img src="./img/truck-solid.svg" alt="camion" class="icon">
-                <p class="price">$6.770</p>
-                <p class="discount">40% OFF</p>
-                <p class="product-name">Cafetera Moulinex</p>
-                
+                <img src="./img/img-macbook-pro-2019.jpg" alt="MacBook Pro 2019">
+                <p>$230.000 20% OFF</p>
+                <p>MacBook Pro 2019</p>
             </div>
             <div class="producto">
-                <img src="./img/img-samsung-galaxy-s10.jpg" alt="samsung galaxy s10">
-                <img src="./img/truck-solid.svg" alt="camion" class="icon">
-                <p class="price">$6.770</p>
-                <p class="discount">40% OFF</p>
-                <p class="product-name">Cafetera Moulinex</p>
-                
+                <img src="./img/img-samsung-galaxy-s10.jpg" alt="Samsung Galaxy S10">
+                <p>$70.500 10% OFF</p>
+                <p>Samsung Galaxy S10</p>
             </div>
             <div class="producto">
-                <img src="./img/img-tv-samsung-smart.jpg" alt="smart tv samsung">
-                <img src="./img/truck-solid.svg" alt="camion" class="icon">
-                <p class="price">$6.770</p>
-                <p class="discount">40% OFF</p>
-                <p class="product-name">Cafetera Moulinex</p>
-                
+                <img src="./img/img-tv-samsung-smart.jpg" alt="Smart TV Samsung">
+                <p>$23.200 5% OFF</p>
+                <p>Smart TV Samsung</p>
             </div>
         </section>
-
     </main>
 
     <!--footer -->
     <footer>
         <div class="info pago">
-            <img src="./img/credit-card-solid.svg" alt=""
+            <img src="./img/credit-card-solid.svg" alt="Tarjeta de crédito">
             <h2>Pagá con tarjeta o en efectivo</h2>
             <p>Con Mercado Libre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
         </div>
         <div class="envio">
-            <img src="./img/gift-solid.svg"
+            <img src="./img/gift-solid.svg" alt="Envío gratis">
             <h2>Envío gratis desde los $2.500</h2>
             <p>Solo por estar registrad@ en Mercado Libre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</p>
         </div>
         <div class="seguridad">
-            <img src="./img/" alt="">
+            <img src="./img/seguridad.jpg" alt="Seguridad">
             <h2>Seguridad de principio a fin</h2>
             <p>¿No te gusta? ¡Devolvelo! En Mercado Libre, no hay nada que no puedas hacer, porque estás siempre protegid@.</p>
         </div>
-        <p>Copyright © 1999-2020 Mercado Libre S.R.L.</p>
-    </footer>
-
-</body>
-</html>
+        <p>Copyright © 1999
