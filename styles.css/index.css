@@ -430,3 +430,42 @@ footer img {
     text-align: center; 
 }
 
+:root {
+    --color-amarillo: #EAC926;
+    --color-azul: #03264C;
+    --color-celeste: #1259c3;
+    --color-gris-oscuro: #666;
+    --color-gris-claro: #ebebeb;
+    --color-verde: #39b54a;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/* ********************HEADER********************** */
+header {
+    background-color: var(--color-amarillo);
+    padding: 20px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header .logo img {
+    width: 150px;
+}
+
+#search-form {
+    position: relative;
+    max-width: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;

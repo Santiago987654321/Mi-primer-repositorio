@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +8,57 @@
     <title>Mercado Libre</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM5vErm4V1b+U5C+Uj2VZ62ksWzT4DbP4/I5J6" crossorigin="anonymous">
+    <style>
+        .producto {
+            position: relative;
+            margin: 20px;
+            border: 1px solid #ebebeb;
+            border-radius: 5px;
+            overflow: hidden;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .producto:hover {
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .descripcion {
+            display: none;
+            padding: 10px;
+        }
+
+        .producto:hover .descripcion {
+            display: block;
+        }
+
+        .icon {
+            transition: transform 0.3s ease;
+        }
+
+        .producto:hover .icon {
+            transform: rotate(90deg);
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+
+        .info {
+            flex: 1;
+            text-align: center;
+        }
+
+        .info img {
+            width: 50px;
+        }
+
+        .info:hover img {
+            filter: brightness(0.7);
+        }
+    </style>
 </head>
 <body>
     <!--header-->
@@ -35,9 +85,9 @@
                     <li class="nav-item"><a class="nav-link" href="#">Tiendas Oficiales</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Vender</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Ayuda</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Creá tu cuenta</a><img src="./img/id-card-regular.svg" alt="Crear cuenta"></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Ingresá</a><img src="./img/right-to-bracket-solid.svg" alt="Ingresar"></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Mis compras</a><img src="./img/basket-shopping-solid.svg" alt="Mis compras"></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Crea tu cuenta</a><img src="./img/id-card-regular.svg" alt="Crear cuenta"></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Inicia sesión</a><img src="./img/right-to-bracket-solid.svg" alt="Ingresar"></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Mis compras</a><img src="./img/basket-shopping-solid.svg" alt="Mis compras"></a></li>
                 </ul>
             </div>
         </nav>
@@ -46,11 +96,11 @@
     <!--main-->
     <main>  
         <!-- Banner -->
-<section class="banner">
-    <img src="./img/img-home-banner.jpg" alt="Banner Promocional">
-</section>
+        <section class="banner">
+            <img src="./img/img-home-banner.jpg" alt="Banner Promocional">
+        </section>
 
-        <!-- sección: basado en tu ultima vista -->
+        <!-- sección: basado en tu última vista -->
         <section>
             <h2>Basado en tu última visita</h2>
             <div class="producto"> 
@@ -59,6 +109,7 @@
                 <p class="price">$6.770</p>
                 <p class="discount">40% OFF</p>
                 <p class="product-name">Cafetera Moulinex</p>
+                <p class="descripcion">Esta cafetera es ideal para preparar deliciosos cafés en casa.</p>
             </div>
             <div class="producto"> 
                 <img src="./img/img-macbook-pro-2019.jpg" alt="MacBook Pro 2019">
@@ -66,6 +117,7 @@
                 <p class="price">$230.000</p>
                 <p class="discount">20% OFF</p>
                 <p class="product-name">MacBook Pro 2019</p>
+                <p class="descripcion">Potente y elegante, perfecta para profesionales.</p>
             </div>
             <div class="producto"> 
                 <img src="./img/img-samsung-galaxy-s10.jpg" alt="Samsung Galaxy S10">
@@ -73,6 +125,7 @@
                 <p class="price">$70.500</p>
                 <p class="discount">10% OFF</p>
                 <p class="product-name">Samsung Galaxy S10</p>
+                <p class="descripcion">Un smartphone con excelente cámara y rendimiento.</p>
             </div>
             <div class="producto"> 
                 <img src="./img/img-tv-samsung-smart.jpg" alt="Smart TV Samsung">
@@ -80,6 +133,7 @@
                 <p class="price">$23.200</p>
                 <p class="discount">5% OFF</p>
                 <p class="product-name">Smart TV Samsung</p>
+                <p class="descripcion">Disfruta de tus programas favoritos en alta definición.</p>
             </div>
         </section>
 
@@ -90,40 +144,65 @@
                 <img src="./img/img-cafetera-moulinex.jpg" alt="Cafetera Moulinex">
                 <p>$6.770 40% OFF</p>
                 <p>Cafetera Moulinex</p>
+                <p class="descripcion">Esta cafetera es ideal para preparar deliciosos cafés en casa.</p>
             </div>
             <div class="producto">
                 <img src="./img/img-macbook-pro-2019.jpg" alt="MacBook Pro 2019">
                 <p>$230.000 20% OFF</p>
                 <p>MacBook Pro 2019</p>
+                <p class="descripcion">Potente y elegante, perfecta para profesionales.</p>
             </div>
             <div class="producto">
                 <img src="./img/img-samsung-galaxy-s10.jpg" alt="Samsung Galaxy S10">
                 <p>$70.500 10% OFF</p>
                 <p>Samsung Galaxy S10</p>
+                <p class="descripcion">Un smartphone con excelente cámara y rendimiento.</p>
             </div>
             <div class="producto">
                 <img src="./img/img-tv-samsung-smart.jpg" alt="Smart TV Samsung">
                 <p>$23.200 5% OFF</p>
                 <p>Smart TV Samsung</p>
+                <p class="descripcion">Disfruta de tus programas favoritos en alta definición.</p>
             </div>
         </section>
     </main>
 
     <!--footer -->
     <footer>
-        <div class="info pago">
-            <img src="./img/credit-card-solid.svg" alt="Tarjeta de crédito">
-            <h2>Pagá con tarjeta o en efectivo</h2>
-            <p>Con Mercado Libre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
+        <div class="footer-content">
+            <div class="info pago">
+                <img src="./img/credit-card-solid.svg" alt="Tarjeta de crédito" class="footer-icon">
+                <h2>Pagá con tarjeta o en efectivo</h2>
+                <p>Con Mercado Libre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
+            </div>
+            <div class="envio">
+                <img src="./img/gift-solid.svg" alt="Envío gratis" class="footer-icon">
+                <h2>Envío gratis desde los $2.500</h2>
+                <p>Solo por estar registrad@ en Mercado Libre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</p>
+            </div>
+            <div class="seguridad">
+                <img src="./img/seguridad.jpg" alt="Seguridad" class="footer-icon">
+                <h2>Seguridad de principio a fin</h2>
+                <p>¿No te gusta? ¡Devolvelo! En Mercado Libre, no hay nada que no puedas hacer, porque estás siempre protegid@.</p>
+            </div>
         </div>
-        <div class="envio">
-            <img src="./img/gift-solid.svg" alt="Envío gratis">
-            <h2>Envío gratis desde los $2.500</h2>
-            <p>Solo por estar registrad@ en Mercado Libre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</p>
+    
+        <div class="footer-extras">
+            <div class="contacto">
+                <h2>Contacto</h2>
+                <p>Si tenés alguna pregunta, no dudes en <a href="#">contactarnos</a>.</p>
+            </div>
+            <div class="enlaces">
+                <h2>Enlaces útiles</h2>
+                <ul>
+                    <li><a href="#">Términos y condiciones</a></li>
+                    <li><a href="#">Política de privacidad</a></li>
+                    <li><a href="#">Ayuda</a></li>
+                    <li><a href="#">Sobre nosotros</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="seguridad">
-            <img src="./img/seguridad.jpg" alt="Seguridad">
-            <h2>Seguridad de principio a fin</h2>
-            <p>¿No te gusta? ¡Devolvelo! En Mercado Libre, no hay nada que no puedas hacer, porque estás siempre protegid@.</p>
-        </div>
-        <p>Copyright © 1999
+    
+        <p class="footer-rights">Copyright © 1999 - 2024 Mercado Libre S.R.L. Todos los derechos reservados.</p>
+    </footer>
+    
